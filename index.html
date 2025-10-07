@@ -1,35 +1,60 @@
-<!-- This is a guaranteed-to-work test file to verify GitHub Pages is active.
-     Please rename this file to 'index.html' before uploading it. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test Success</title>
+    <title>IB Physics: Kinematics & Forces</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU07EWHeMOSBcBIveGTuyNlADnt48ethXR3QOEle7IQhfBScCKD43EA" crossorigin="anonymous">
     <style>
+        /* Custom styles for readability and aesthetics */
         body {
             font-family: 'Inter', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f7f7f7;
+            background-color: #f7f9fc;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .section-title {
+            border-left: 6px solid #10b981; /* Emerald green border */
+            padding-left: 1rem;
+        }
+        .equation-box {
+            background-color: #ecfdf5; /* Light green */
+            border: 1px solid #a7f3d0;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+        }
+        /* Style for the quiz options */
+        .quiz-option {
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .quiz-option:hover:not(.selected) {
+            background-color: #f0fdf4; /* Lighter green on hover */
+            border-color: #34d399;
+        }
+        .correct-answer {
+            background-color: #d1fae5; /* Tailwind green-100 */
+            border-color: #10b981 !important; /* Tailwind emerald-500 */
+            font-weight: 600;
+        }
+        .incorrect-answer {
+            background-color: #fee2e2; /* Tailwind red-100 */
+            border-color: #ef4444 !important; /* Tailwind red-500 */
+            color: #ef4444;
+            font-weight: 600;
+        }
+        /* KaTeX styling */
+        .katex-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 0.5rem 0;
         }
     </style>
 </head>
 <body>
-    <div class="max-w-md w-full bg-white p-8 rounded-xl shadow-2xl border-t-8 border-green-500 text-center">
-        <svg class="mx-auto h-12 w-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <h1 class="text-3xl font-extrabold text-gray-900 mt-4 mb-2">Success!</h1>
-        <p class="text-gray-600 mb-6">
-            If you see this page, your GitHub Pages hosting is working perfectly.
-        </p>
-        <p class="text-sm font-medium text-gray-500">
-            You can now replace this content with the full application code.
-        </p>
-    </div>
-</body>
+    </body>
 </html>
